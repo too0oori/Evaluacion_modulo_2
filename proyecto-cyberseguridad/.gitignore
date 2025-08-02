@@ -1,0 +1,10 @@
+ # Ignorar archivos de log
+  *.log
+
+  # Ignorar la carpeta build
+  /build
+
+  # Ignorar archivos temporales del sistema
+  .DS_Store
+  Thumbs.db
+  
