@@ -1,10 +1,16 @@
- # Ignorar archivos de log
-  *.log
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-  # Ignorar la carpeta build
-  /build
+# Editores
+.vscode/
+.idea/
+*.swp
 
-  # Ignorar archivos temporales del sistema
-  .DS_Store
-  Thumbs.db
-  
+# Archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Dependencias (si usas npm)
+node_modules/
