@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos de Seguridad - CiberSeguridad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <span class="fw-bold">CiberSeguridad</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amenazas.html">Amenazas Comunes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="consejos.html">Consejos de Seguridad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Consejos de <span class="text-accent">Seguridad</span></h1>
+            <p class="lead text-secondary">Protege tu información con estas buenas prácticas.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <h3 class="fw-bold mb-4">Buenas Prácticas</h3>
+                <div class="tip-item d-flex align-items-start border-bottom border-secondary p-3">
+                    <span class="text-primary me-3 mt-1" style="font-size: 1.5rem;">•</span>
+                    <div>
+                        <h5 class="text-white">Usa Contraseñas Seguras</h5>
+                        <p class="text-secondary">Crea contraseñas únicas de al menos 12 caracteres que combinen letras mayúsculas, minúsculas, números y símbolos especiales.</p>
+                    </div>
+                </div>
+                <div class="tip-item d-flex align-items-start border-bottom border-secondary p-3">
+                    <span class="text-success me-3 mt-1" style="font-size: 1.5rem;">•</span>
+                    <div>
+                        <h5 class="text-white">Autenticación de Dos Factores (2FA)</h5>
+                        <p class="text-secondary">Activa 2FA en todas tus cuentas importantes para una capa extra de seguridad.</p>
+                    </div>
+                </div>
+                <div class="tip-item d-flex align-items-start border-bottom border-secondary p-3">
+                    <span class="text-warning me-3 mt-1" style="font-size: 1.5rem;">•</span>
+                    <div>
+                        <h5 class="text-white">Mantén Todo Actualizado</h5>
+                        <p class="text-secondary">Instala actualizaciones de seguridad tan pronto como estén disponibles en tu sistema operativo y aplicaciones.</p>
+                    </div>
+                </div>
+                <div class="tip-item d-flex align-items-start border-bottom border-secondary p-3">
+                    <span class="text-info me-3 mt-1" style="font-size: 1.5rem;">•</span>
+                    <div>
+                        <h5 class="text-white">Cuidado con el WiFi Público</h5>
+                        <p class="text-secondary">Las redes WiFi públicas son convenientes pero peligrosas. Evita realizar transacciones importantes o acceder a información sensible.</p>
+                    </div>
+                </div>
+                <div class="tip-item d-flex align-items-start p-3">
+                    <span class="text-danger me-3 mt-1" style="font-size: 1.5rem;">•</span>
+                    <div>
+                        <h5 class="text-white">Haz Respaldos Regulares</h5>
+                        <p class="text-secondary">Protege tus archivos importantes con la regla 3-2-1: 3 copias de tus datos, en 2 tipos de medios diferentes, con 1 copia fuera del sitio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-secondary border-0 mb-4 shadow-lg">
+                    <div class="card-header border-bottom-0 bg-primary rounded-top">
+                        <h5 class="mb-0 text-white">¿Necesitas Ayuda?</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-secondary">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-secondary">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-secondary">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-2">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card bg-secondary border-0 shadow-lg">
+                    <div class="card-header border-bottom-0 bg-dark rounded-top">
+                        <h5 class="mb-0 text-white">Test de Seguridad</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-secondary">Pon a prueba tus conocimientos sobre ciberseguridad.</p>
+                        <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#testModal">
+                        Comenzar Test
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal del Test -->
+    <div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="testModalLabel">Test de Ciberseguridad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="testForm">
+                        <div class="mb-4">
+                            <p class="fw-bold">1. ¿Cuál es una técnica que busca engañarte para que reveles información confidencial a través de correos electrónicos o sitios web falsos?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1a" value="a" required>
+                                <label class="form-check-label" for="q1a">a) Phishing</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                                <label class="form-check-label" for="q1b">b) Ransomware</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                                <label class="form-check-label" for="q1c">c) Malware</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="fw-bold">2. ¿Qué tipo de malware cifra tus archivos y exige un rescate económico para recuperarlos?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2a" value="a" required>
+                                <label class="form-check-label" for="q2a">a) Gusano</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                                <label class="form-check-label" for="q2b">b) Troyano</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                                <label class="form-check-label" for="q2c">c) Ransomware</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="fw-bold">3. ¿Cuál es una buena práctica para proteger tus cuentas en línea?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3a" value="a" required>
+                                <label class="form-check-label" for="q3a">a) Reutilizar la misma contraseña para todas las cuentas</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                                <label class="form-check-label" for="q3b">b) Usar una contraseña de 8 caracteres sin símbolos</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                                <label class="form-check-label" for="q3c">c) Activar la autenticación de dos factores (2FA)</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <p class="fw-bold">4. ¿Qué es un ataque DDoS?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4" id="q4a" value="a" required>
+                                <label class="form-check-label" for="q4a">a) Un software que se replica por toda la red</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                                <label class="form-check-label" for="q4b">b) Un intento de sobrecargar un servicio en línea con tráfico para dejarlo no disponible</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                                <label class="form-check-label" for="q4c">c) Un software que roba tus datos personales</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="fw-bold">5. ¿Qué deberías hacer si recibes un correo electrónico urgente pidiendo tus datos personales?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5" id="q5a" value="a" required>
+                                <label class="form-check-label" for="q5a">a) Responder inmediatamente para ver si es real</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                                <label class="form-check-label" for="q5b">b) Hacer clic en el enlace para verificar el remitente</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                                <label class="form-check-label" for="q5c">c) Eliminar el correo y no hacer clic en ningún enlace</label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Respuestas</button>
+                        </div>
+                    </form>
+                    
+                    <div id="resultadoTest" class="alert mt-4 d-none" style="display: none;"></div>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-white text-center py-4 mt-5 border-top border-secondary">
+        <div class="container">
+            <p class="mb-0 text-secondary">&copy; 2025. M2_Evaluación de Módulo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
