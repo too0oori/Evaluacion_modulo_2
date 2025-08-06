@@ -1,0 +1,255 @@
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #2a2a2a;
+    --bg-card: #383838;
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --accent-primary: #00d4ff;
+    --accent-secondary: rgb(156, 39, 176);
+    --border-color: #4a4a4a;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding-top: 76px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--text-primary) !important;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: var(--accent-primary) !important;
+}
+
+/* Hero y page header */
+.hero {
+    background: linear-gradient(rgba(156, 39, 176, 0.7), rgba(0, 0, 0, 0.7));
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://source.unsplash.com/1600x900/?cybersecurity,data') center/cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    padding-top: 76px;
+}
+
+/* Botones */
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--text-secondary);
+    color: var(--text-secondary);
+    background: transparent;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--text-secondary);
+    color: var(--bg-primary);
+}
+
+/* Cards*/
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-header {
+    background-color: var(--bg-secondary) !important;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.card-body {
+    color: var(--text-muted);
+}
+
+.card-title, .card h5 {
+    color: var(--text-primary);
+}
+
+/* Iconos de las tarjetas*/
+.icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.bg-primary { background-color: var(--accent-primary) !important; }
+.bg-success { background-color: #4caf50 !important; }
+.bg-warning { background-color: #ffc107 !important; }
+.bg-danger { background-color: #f44336 !important; }
+
+/* Acordeón */
+.accordion-item {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
+
+.accordion-button {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--accent-primary) !important;
+    color: white !important;
+}
+
+.accordion-body {
+    background-color: var(--bg-secondary);
+    color: var(--text-muted);
+}
+
+/* Modal quiz*/
+.modal-content {
+    background-color: var(--bg-card);
+    border: none;
+    border-radius: 12px;
+    color: var(--text-primary);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Quiz options */
+.quiz-option {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-muted);
+}
+
+.quiz-option:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+.quiz-option.selected {
+    border-color: var(--accent-primary);
+    background-color: var(--accent-primary);
+    color: white;
+}
+
+/* Formulario*/
+.form-control {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+}
+
+.form-control:focus {
+    background-color: var(--bg-secondary);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.15);
+    color: var(--text-primary);
+}
+
+.form-label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+
+/* Tips */
+.tip-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.tip-item:hover {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.tip-item h5 {
+    color: var(--text-primary);
+}
+
+/* coloress de los textos */
+.text-accent { color: var(--accent-primary) !important; }
+.text-secondary { color: var(--text-primary) !important; }
+
+/* Carousel */
+.carousel-inner .card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
